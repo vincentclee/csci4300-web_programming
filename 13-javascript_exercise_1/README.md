@@ -20,13 +20,15 @@ Although the code we write should work in any new browser, we will be using Mozi
 3. Launch Mozilla Firefox and open the **Tools/Web Developer** menu. I have underlined the tools I use for Web development. If you don’t have these tools, use Get More Tools to get them. (You can use Firebug to view the DOM, so DOM inspector is not really necessary. I will use Firebug to view the DOM in these screenshots.)
 4. Use Firefox to open the vonManderpootz.html file (it’s in your workspace folder). Open Firebug and click the HTML tab. Try opening and closing some of the elements. Note that the corresponding sections of the visible pages light up when you select various elements in the document. Way cool, eh?
 5. In 
-6. Note the <TBODY> element, which does not correspond to the HTML code! Mozilla creates this element as part of the Document Object Model, which we will discuss in class.
+6. Note the `<TBODY>` element, which does not correspond to the HTML code! Mozilla creates this element as part of the Document Object Model, which we will discuss in class.
 7. Close down Firebug for now. Enter the boxed code into the `<head>` section of your document. The predefined **alert** function pops up a dialog box. 
 8. Save the file and reload it in Firefox. You should see the cheery hello message!You must click OK before you can see the page content.
+
 
 ####Functions and event handlers
 9. In our first example, the alert box pops up before the page contents are displayed. To control when an action takes place, we convert the action to a function, as shown at right.  Note that since JavaScript is a weakly typed language, functions do not have return types.
 10. Save the file and reload in Firefox. This time you will not see the cheery alert box, because the function has not been called. To make the box pop up on demand, we will add an event handler.
+
 
 ####Event handlers
 11. Add an <input> element to the code after the end of the table, as shown at right. Save in Eclipse and reload the page. You should see a button that pops up the alert box when clicked. Note that this input is not in a <form> tag, because it will not submit data to a server.
