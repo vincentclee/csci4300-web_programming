@@ -48,3 +48,5 @@ Look in your textbook for the **<servlet>** and **<servlet-mapping>**  elements 
 29. Follow the following pattern to display the cart. Note the use of **Expression Language** expressions such as **${bean.cart}.**
 30. Note that **${bean.cart}** represents the return value of the getCart method., which is a collection. Each object in this collection, which will represent a LineItem, is denoted by **item.**
 31. When you have got this app to run in NetBeans,  go to Part II of these instructions to deploy on your Linux Virtual Machine!
+
+3 But acme.jsp file is a JSP file, not a servlet! Not to worry: our friend Jasper will compile it into a servlet.
