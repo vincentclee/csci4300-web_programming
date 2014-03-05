@@ -68,6 +68,7 @@ In general, we use the executeUpdate method when the PreparedStatement does not 
 42. Here is the code for the listBands method. Make sure you understand it, as you will be using this pattern a lot!
 
 Now I am going to set you off on your own. Here is the plan I want you to follow:
+
 43. Write a Junit method testBands, which does the following:  
 a. Creates an instance;  
 b. Clears the table of bands;  
