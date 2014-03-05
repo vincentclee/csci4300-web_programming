@@ -91,49 +91,59 @@ In summary, please add a note of attribution for anything you copy. This can be 
 
 ####The DIV element  
 Try validating index.html again. You should get a slew of errors, starting with “character data is not allowed here.” The first suggested possible error in the validator is “putting text directly in the body of the document without wrapping it in a container element,” which is precisely what we’ve done. 
-The error message also gives a list of possible start tags that might solve the problem. We’ll use the DIV element. Look up DIV at www.blooberry.com, and follow the link to the description of Block Formatting. You need not read this page in its entirety (although that would be worthwhile). Just notice that block formatted elements should have a line break before and after.
-Edit your page to add a <div> tag before the <img> tag and a </div> tag after. The page should now validate. However, the DIV element also will force the image to occupy its own horizontal division of the page. Later on, we’ll show how to lay out an image side-by-side with text and to wrap text around an image.
 
-Lists and Tables
-HTML lists and tables are called container elements:
-A list element contains list item elements, which contain the actual list item text;
-A table element contains table row elements, which contain table data elements, which contain the actual data.
+The error message also gives a list of possible start tags that might solve the problem. We’ll use the DIV element. Look up DIV at www.blooberry.com, and follow the link to the description of **Block Formatting**. You need not read this page in its entirety (although that would be worthwhile). Just notice that block formatted elements should have a line break before and after.
+
+Edit your page to add a `<div>` tag before the `<img>` tag and a `</div>` tag after. The page should now validate. However, the DIV element also will force the image to occupy its own horizontal division of the page. Later on, we’ll show how to lay out an image side-by-side with text and to wrap text around an image.
+
+####Lists and Tables
+HTML lists and tables are called **container** elements:
+* A **list element** contains **list item elements**, which contain the actual list item text;
+* A **table element** contains **table row elements**, which contain **table data elements**, which contain the actual data.
+
 Lists can be ordered lists (numbered lists) or unordered lists (bullet lists). Later we will show how to add styling to make an ordered list display its items as 1, 2, 3, or A, B, C, or I, II, III as well as other numbering types. 
+
 Let’s start by creating a couple of lists. In your project, create a new HTML file named vonManderpootz.html, which will chronicle a character from the 1930’s science fiction stories of Stanley Weinbaum. Here is the result and the starter HTML code:
 
-
-Note how the <li> -- </li> pair, which defines a list element, lies within the <ol> tag and its matching </ol> tag (not shown here. This is what we mean when we say that the OL element contains the LI elements.
-Don’t forget to close this first ordered list with an </OL> tag before starting the second <h3> header and the second list.
-The second list is an unordered list, so use a <ul> tag instead of an <ol> tag.
 When you have finished generating this list, use the validation service at validator.w3.org to make sure that it validates as HTML 4.01 Strict.
-Nested lists: Now add sub-lists to the last two unordered list items as shown here. Each sub-list is a part of a list item; for example, the list of composers is a  part of the list item, “concert pianist.” Therefore, the entire list of composers, including the <ol> and </ol> tags, must come between the <li> and </li> tags of the “concert pianist” list item. As you can see here, the sub-list should come after the text content of this list item. Try it out!
-When you have completed the two sub-lists, make sure they validate. Then return to von Manderpootz.html and launch Firebug by clicking the bug icon  at the bottom right corner of your Firefox window. Click on the HTML tab and open  the second list, which appears as a <ul> element. You should see that the third and fourth list items can be opened to reveal their sub-lists, as shown here. Do you see how the nested tags in your HTML code correspond to the tree structure shown in Firebug?
-Tables: create another page called morningSchedules.html (using HTML 4.01 Strict, as always!) We will create an HTML table to represent a hypothetical student’s MWF morning schedule, as shown here. Tables have a more complex containment structure: tables contain table rows (TR elements), which contain table data (TD elements). Complete the starter code to reproduce the table shown below. You will not see the borders between table cells yet! Make sure your code validates before proceeding.
 
+**Nested lists:** Now add sub-lists to the last two unordered list items as shown here. Each sub-list is a part of a list item; for example, the list of composers is a  part of the list item, “concert pianist.” Therefore, the entire list of composers, including the `<ol>` and `</ol>` tags, must come between the `<li>` and `</li>` tags of the “concert pianist” list item. As you can see here, the sub-list should come after the text content of this list item. Try it out!
 
-Attributes: How can we get the borders? Open a separate Web browser window to www.blooberry.com and select the HTML reference. Navigate to the TABLE element and look under “Specific attributes” for the Border attribute. See if you can find these two key facts about the Border attribute:
-It is valid HMTL 4.01 Strict;
-Its value should be an integer denoting the border width in pixels.
-Attribute values are always defined within the opening HTML tag using name-value semantics, as shown here. In this case the attribute name is “border,” and the attribute value is “1.” Although this particular attribute value is an integer, it is conventional to always enclose attribute values in quotes.2
-Table headers: in your blooberry browser window, look up the TH element. Try changing the TD elements in the first row and the first column of your table to TH elements. Does this look better?
+When you have completed the two sub-lists, make sure they validate. Then return to von Manderpootz.html and launch **Firebug** by clicking the bug icon  at the bottom right corner of your Firefox window. Click on the HTML tab and open  the second list, which appears as a `<ul>` element. You should see that the third and fourth list items can be opened to reveal their sub-lists, as shown here. Do you see how the nested tags in your HTML code correspond to the tree structure shown in Firebug?
 
-Merging table cells: Look up the TD element in your Blooberry reference and find the rowspan attribute. Using this attribute, define the two “Chem Lab” elements in the third row to take up two rows each. Remember that attributes are defined inside the opening tag, using name-value syntax.  When this is done, the “Chem Lab” elements in the fourth row are no longer needed, because the third row elements now fill their slots in the table. The result should look like the example at right. 
+**Tables:** create another page called **morningSchedules.html** (using HTML 4.01 Strict, as always!) We will create an HTML table to represent a hypothetical student’s MWF morning schedule, as shown here. Tables have a more complex containment structure: tables contain table rows (TR elements), which contain table data (TD elements). Complete the starter code to reproduce the table shown below. You will not see the borders between table cells yet! Make sure your code validates before proceeding.
+
+**Attributes:** How can we get the borders? Open a separate Web browser window to www.blooberry.com and select the HTML reference. Navigate to the TABLE element and look under “Specific attributes” for the Border attribute. See if you can find these two key facts about the Border attribute:
+* It is valid HMTL 4.01 Strict;
+* Its value should be an integer denoting the border width in pixels.
+
+Attribute values are always defined within the opening HTML tag using **name-value semantics**, as shown here. In this case the attribute name is “border,” and the attribute value is “1.” Although this particular attribute value is an integer, it is conventional to always enclose attribute values in quotes.2
+
+**Table headers:** in your blooberry browser window, look up the TH element. Try changing the TD elements in the first row and the first column of your table to TH elements. Does this look better?
+
+**Merging table cells:** Look up the TD element in your Blooberry reference and find the rowspan attribute. Using this attribute, define the two “Chem Lab” elements in the third row to take up two rows each. Remember that attributes are defined inside the opening tag, using name-value syntax.  When this is done, the “Chem Lab” elements in the fourth row are no longer needed, because the third row elements now fill their slots in the table. The result should look like the example at right. 
+
 By the way, there is also a “colspan” attribute for use when a table cell spans multiple columns.
-The Document Object Model
-Use the Firebug HTML tab to open the <table> element. You will see an element, <tbody>,  that does not correspond to any tag in the HTML source code. TBODY represents the the body of the table, as opposed to specialized header and footer rows. We don’t identify our header rows as such in this simple table, but if you write tables that span multiple pages you might want to look into the THEAD element.
-TBODY is part of the Document Object Model (DOM), which is how Web browsers represent a document as collection of objects. As you have seen, tag pairs such as <li> … </li> create elements that you can view in Firebug; these elements are part of the DOM. But as you have just seen, the DOM contains more than these elements. We’ll have more to say about the DOM later on in this course.
-Tables for side-by-side layout: Tables are commonly used to lay elements out side-by-side. Return to your vonManderpootz.html page and create a table with one row, two TD elements, and no border. Move the lists and their headers into the first TD, and put an image tag in the second TD. Set the src attribute to “MadScientist.jpg” and the alt attribute to “A shining example of Humanity”. Also add an <h3> header element, “Dr. Felix von Manderpootz,” before the <img> tag.
+
+####The Document Object Model
+Use the Firebug HTML tab to open the `<table>` element. You will see an element, `<tbody>`,  that does not correspond to any tag in the HTML source code. TBODY represents the the body of the table, as opposed to specialized header and footer rows. We don’t identify our header rows as such in this simple table, but if you write tables that span multiple pages you might want to look into the THEAD element.
+
+TBODY is part of the **Document Object Model (DOM)**, which is how Web browsers represent a document as collection of objects. As you have seen, tag pairs such as `<li> … </li>` create **elements** that you can view in Firebug; these elements are part of the DOM. But as you have just seen, the DOM contains more than these elements. We’ll have more to say about the DOM later on in this course.
+
+**Tables for side-by-side layout:** Tables are commonly used to lay elements out side-by-side. Return to your **vonManderpootz.html** page and create a table with one row, two TD elements, and no border. Move the lists and their headers into the first TD, and put an image tag in the second TD. Set the **src** attribute to “MadScientist.jpg” and the **alt** attribute to “A shining example of Humanity”. Also add an `<h3>` header element, “Dr. Felix von Manderpootz,” before the `<img>` tag.
+
 Download the “MadScientist.jpg” file from eLC and store it into your WebContent folder. If you have done everything correctly, the result should look like the image at right.
+
 Giving attribution: as mentioned above, it is important to be respectful of intellectual property and also to honor the creative work of those who have gone before us. Add the following paragraph below your page:
 
-Input Elements
+####Input Elements
  HTML input elements allow the user to specify input variables that will be used by Web applications. (We will show how the Web apps access these values later on.) Input variables are specified using name-value syntax again: the variable name is specified in the HTML code, and the value is whatever the user enters. 
+
 Return to index.html and add this code at the bottom of the page. Save and view the results; you should see empty text boxes for the user to enter their first and last name. Note that the name attribute is not visible to the user, so we must add a prompt.
+
 It’s possible to specify initial values for the text boxes. Try adding value attributes as shown at right. When you save and view the page, you will see the values in the text boxes. However, you can still type in text to override these values. Single quotes and double quotes are equivalent in this context.
+
 Revalidate index.html again. You should get a slew of errors, starting with “character data is not allowed here. Once again, we have “[put] text directly in the body of the document without wrapping it in a container element.” Do you remember how we fixed that problem with the Fred Flintstone image? This time, use a <P> element as your container. Revalidate the page to confirm.
-About HTML 5
+
+####About HTML 5
 HTML 5 is the latest version of HTML, but it has not yet been accepted as a W3C standard and is not fully supported by all browsers. To learn some of the cool features of HTML5, visit http://www.w3schools.com/html/html5_intro.asp. I especially like the new input elements! We won’t be using HTML 5 in this course, however.
- 
-
-
-
