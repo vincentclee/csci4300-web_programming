@@ -8,11 +8,12 @@ In this exercise, we will use these JavaScript objects to verify that a form has
 2. Right-click the project node and useNew/HTML page to create a page named **formCheck.html**. Download the HTML file **formCheck_Starter.html** from the eLC Assignment  page. Open the file with a text editor and paste its contents over the contents of formCheck.html. Save the contents.
 3. Create another HTML page index.html, containing a link to formCheck.html. Now you should be able to run the application and navigate to our file.
 4. The page claims to validate as HTML 4.01, so visit the validator page at http://validator.w3.org and verify this. In general, we’d like all our pages to validate as HTML 4.01 Strict, XHTML, or HTML5.
-Creating an Echo servlet
+
+####Creating an Echo servlet
 5. The transfer of REQUEST variables from client to server follows the “name=value” format. That is, each variable has a specific name and a specific value. Open FormCheck.html with a text editor and examine the source code to see how the variables are named.
 6. This code contains a logic error: the city variable never makes it to the server. Examine the source code and fix the error.
 7. In the HTML code, the form is defined to submit to “Echo.” When you fill out the form and submit, you will get an error because there is no resource at that URL.
-8. Create a new Servlet named EchoServlet in package servlets, initialized as follows: 
+8. Create a new Servlet named **EchoServlet** in package **servlets**, initialized as follows: 
 a. The URL pattern is /Echo;
 b. The class comment identifies this as a diagnostic servlet that echoes posted form contents;
 c. The doPost spec comments says “Echoes all request parameter names and values”.
