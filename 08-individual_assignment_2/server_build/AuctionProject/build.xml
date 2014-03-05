@@ -1,0 +1,40 @@
+<project name="Auction Project" default="deploy">
+	<property name="tomcat-home" value="/opt/tomcat"/>
+		<path id="jar-files-classpath">
+			<fileset dir="${tomcat-home}/lib" includes="*.jar"/>
+		</path>
+
+	<target name="compile">
+		<javac srcdir="src" destdir="classes" includeAntRuntime="no" listfiles="yes" classpathref="jar-files-classpath"/>
+	</target>
+	<target name="test_compile" depends="compile">
+		<javac srcdir="test_src" destdir="test_classes" listfiles="yes">
+			<classpath>
+				<pathelement location="classes"/>
+				<pathelement location="libs/junit-4.11.jar"/>
+				<path refid="jar-files-classpath"/>
+			</classpath>
+		</javac>
+	</target>
+	<target name="test" depends="test_compile">
+		<junit haltonfailure="on">
+			<classpath>
+				<pathelement path="classes;test_classes"/>
+				<path refid="jar-files-classpath"/>
+			</classpath>
+			<formatter type="plain" usefile="false"/>
+			<test name="helper.AuctionHelperTest"/>
+		</junit>
+	</target>
+	<target name="deploy" depends="test">
+		<war destfile="AuctionProject.war" basedir="web" webxml="web.xml">	
+			<classes dir="classes"/>
+			<lib dir="libs"/>
+		</war>
+		<echo message="Copying AuctionProject.war to webapps folder..."/>
+		<copy verbose="true" overwrite="true" file="AuctionProject.war" todir="/opt/tomcat/webapps"/>
+	</target>
+	<target name="javadoc" depends="deploy">
+        <javadoc access="private" author="true" destdir="doc" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" packagenames="helper,servlets" source="1.6" sourcepath="src" splitindex="true" use="true" version="true"/>
+    </target>
+</project>

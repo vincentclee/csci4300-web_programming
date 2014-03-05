@@ -1,0 +1,19 @@
+use CoursePicker
+
+//Display contents first 20 items.
+select * from CourseOfferingFall2013 limit 20;
+select * from CSCoursesRequirements limit 20;
+select * from CSRequirementsList;
+select * from BuildingIndexByNumber limit 20;
+
+//Properties
+describe CourseOfferingFall2013;
+describe CSCoursesRequirements;
+describe CSRequirementsList;
+describe BuildingIndexByNumber;
+
+//Clear all records
+TRUNCATE TABLE CourseOfferingFall2013;
+TRUNCATE TABLE CSCoursesRequirements;
+TRUNCATE TABLE CSRequirementsList;
+TRUNCATE TABLE BuildingIndexByNumber;

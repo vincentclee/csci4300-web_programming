@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Weekly Class Schedule</title>
+
+<script type="text/javascript">
+
+	var daysOfWeek = new Array("", "Mon", "Tue", "Wed", "Thurs", "Fri");
+	var hoursOfDay = new Array("8:00", "9:00", "10:00", "11:00", "12:00", "1:00", "2:00", "3:00", "4:00");
+	
+	/**
+	*  Draw a single class meeting on the canvas
+	*/
+	function drawClassMeeting() {
+		
+	}
+	
+	/**
+	*  Initialize the canvas with grid lines and labels
+	*/
+	function initializeCanvas() {
+		
+		var bw = 520; //bow width
+		var bh = 360;  //box height
+		var p = 40;  //padding
+		var cw = bw + (p*2) + 1;
+		var ch = bh + (p*2) + 1;
+		var c = document.getElementById("myCanvas");
+		var ctx = c.getContext("2d");
+
+		for (var x = 0, y = 0; x <= bw; x += 104, y++) {
+		    ctx.moveTo(0.5 + x + p, p);
+		    ctx.lineTo(0.5 + x + p, bh + p);
+		    ctx.fillText(daysOfWeek[y], x + p - 64, p - 10);
+		}
+
+		for (var x = 0; x <= bh; x += 40) {
+		    ctx.moveTo(p, 0.5 + x + p);
+		    ctx.lineTo(bw + p, 0.5 + x + p);
+		}
+
+		ctx.strokeStyle = "black";
+		ctx.stroke();
+	}
+</script>
+</head>
+<body onload = "initializeCanvas();">
+
+<canvas id="myCanvas" width="600" height="440" style="border:1px solid #000000;">
+
+</canvas>
+
+</body>
+</html>

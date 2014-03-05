@@ -1,0 +1,32 @@
+<project name="MVC Practice" default="deploy">
+	<property name="tomcat-home" value="/opt/tomcat"/>
+	<path id="project-classpath">
+		<fileset dir="web/WEB-INF/lib" includes="*.jar" />
+		<fileset dir="${tomcat-home}/bin" includes="*.jar" />
+	</path>
+	<target name="compile">
+		<javac srcdir="src" destdir="classes" includeAntRuntime="no" classpathref="project-classpath"/>
+	</target>
+	<target name="test_compile" depends="compile">
+		<javac srcdir="test_src" destdir="test_classes">
+			<classpath>
+				<pathelement location="classes"/>
+				<pathelement location="/usr/share/java/junit4.jar"/>
+			</classpath>
+		</javac>
+	</target>
+	<target name="test" depends="test_compile">
+		<junit haltonfailure="on">
+			<classpath path="classes;test_classes"/>
+			<formatter type="plain" usefile="false"/>
+			<test name="helpers.StringReverserTest"/>
+		</junit>
+	</target>
+	<target name="deploy" depends="test">
+		<war destfile="MVCPractice.war" basedir="web" webxml="web.xml">	
+			<classes dir="classes"/>
+		</war>
+		<echo message="Copying MVCPractice.war to webapps folder..."/>
+		<copy verbose="true" overwrite="true" file="MVCPractice.war" todir="/opt/tomcat/webapps"/>
+	</target>
+</project>

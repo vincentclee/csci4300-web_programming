@@ -1,0 +1,7 @@
+LOAD DATA CONCURRENT LOCAL INFILE '/home/student/CoursePicker/CSVFiles/BuildingIndexByNumber.csv'
+REPLACE
+INTO TABLE BuildingIndexByNumber
+FIELDS TERMINATED BY ','
+OPTIONALLY ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+(buildingNum,buildingName,grid);

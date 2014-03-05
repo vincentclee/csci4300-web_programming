@@ -1,0 +1,29 @@
+LOAD DATA CONCURRENT LOCAL INFILE '/home/student/CoursePicker/CSVFiles/course_offering_UNIV_201308.csv'
+REPLACE
+INTO TABLE CourseOfferingFall2013
+FIELDS TERMINATED BY ','
+OPTIONALLY ENCLOSED BY '"'
+LINES TERMINATED BY '\n' (
+Term,
+CallNum,
+CoursePrefix,
+CourseNum,
+CourseTitle,
+Instructor,
+Avail,
+CrdHrs,
+Sess,
+Days,
+PeriodBgn,
+PeriodEnd,
+CASTaken,
+CASReq ,
+DASTaken,
+DASReq,
+TotTaken,
+TotReq,
+TotAllow,
+Bldg,
+Room,
+Sch,
+CurrPgm);

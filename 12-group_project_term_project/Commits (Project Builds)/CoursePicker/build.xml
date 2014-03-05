@@ -1,0 +1,51 @@
+<project name="CoursePickerProject" default="deploy">
+	
+	<target name="Compile Java Source Files">
+		<javac srcdir= "src/"
+			destdir = "classes/"
+			includeAntRuntime= "no">
+			<classpath>
+				<pathelement location="test_classes/"/>
+				<pathelement location="classes/"/>
+				<pathelement location="/opt/tomcat/lib/mysql-connector-java-5.1.22-bin.jar"/>
+				<pathelement location="/opt/tomcat/lib/servlet-api.jar"/>
+				<pathelement location="/opt/tomcat/lib/javax.servlet.jsp.jstl-1.2.1.jar"/>
+				<pathelement location="/opt/tomcat/lib/javax.servlet.jsp.jstl-api-1.2.1.jar"/>
+			</classpath>
+		</javac>
+	</target>
+	
+	<target name="test_compile" depends="Compile Java Source Files">
+		<javac srcdir="test_src/" destdir="test_classes/">
+			<classpath>
+				<pathelement location="classes/"/>
+				<pathelement location="/usr/share/java/junit4.jar"/>
+				<pathelement location="/opt/tomcat/lib/servlet-api.jar"/>
+				<pathelement location="/opt/tomcat/lib/javax.servlet.jsp.jstl-1.2.1.jar"/>
+				<pathelement location="/opt/tomcat/lib/javax.servlet.jsp.jstl-api-1.2.1.jar"/>
+			</classpath>
+		</javac>
+	</target>
+	
+	<target name="test" depends="test_compile">
+		<junit>	
+			<test name="coursepicker.CourseDAOTest"/>
+			<classpath>
+				<pathelement location="test_classes/"/>
+				<pathelement location="classes/"/>
+				<pathelement location="/opt/tomcat/lib/mysql-connector-java-5.1.22-bin.jar"/>
+				<pathelement location="/opt/tomcat/lib/servlet-api.jar"/>
+				<pathelement location="/opt/tomcat/lib/javax.servlet.jsp.jstl-1.2.1.jar"/>
+				<pathelement location="/opt/tomcat/lib/javax.servlet.jsp.jstl-api-1.2.1.jar"/>
+			</classpath>
+			<formatter type="plain" usefile="false"/>
+		</junit>
+	</target>
+	
+	<target name="deploy" depends="test">
+		<war destfile="CoursePicker.war" basedir="web" webxml="web.xml">
+			<classes dir="classes"/>
+		</war>
+		<echo message="TODO: copy to webapps folder"/>
+	</target>	
+</project>		

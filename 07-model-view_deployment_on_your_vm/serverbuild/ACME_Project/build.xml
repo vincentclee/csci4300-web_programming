@@ -1,0 +1,29 @@
+<project name="ACME Dangerous Products" default="deploy">
+	<target name="compile">
+		<javac srcdir="src" destdir="classes" includeAntRuntime="no"/>
+	</target>
+	<target name="test_compile" depends="compile">
+		<javac srcdir="test_src" destdir="test_classes">
+			<classpath>
+				<pathelement location="classes"/>
+				<pathelement location="/usr/share/java/junit4.jar"/>
+			</classpath>
+		</javac>
+	</target>
+	<target name="test" depends="test_compile">
+		<junit haltonfailure="on">
+			<classpath path="classes;test_classes"/>
+			<formatter type="plain" usefile="false"/>
+			<test name="acme.LineItemTest"/>
+			<test name="acme.ShoppingCartBeanTest"/>
+		</junit>
+	</target>
+	<target name="deploy" depends="test">
+		<war destfile="ACME.war" basedir="web" webxml="web.xml">	
+			<classes dir="classes"/>
+			<lib dir="libs"/>
+		</war>
+		<echo message="Copying ACME.war to webapps folder..."/>
+		<copy overwrite="true" file="ACME.war" todir="/opt/tomcat/webapps"/>
+	</target>
+</project>

@@ -1,0 +1,18 @@
+etc/my.cnf
+
+symbolic-links=0
+to
+symbolic-links=1
+
+service mysqld restart
+
+
+don't really need the part above. 
+
+mysql -u root -p
+
+use csci4300;
+
+GRANT ALL ON *.* to root@'%' IDENTIFIED BY 'yorpassword';
+
+FLUSH PRIVILEGES;

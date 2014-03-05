@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+     <META http-equiv="Content-Type" content="text/html; charset=ISO-8859-5">
+     <title>Javascript Assignment -- Form Completion</title>
+     <link rel='stylesheet' href='csci4300.css'>
+
+<script type="text/javascript">
+  /**
+   * Returns true if all form fields have been completed.
+   * Otherwise, displays an alert box with an error message
+   * for the first uncompleted form field and returns false.
+   */
+   function formOK(){
+	   firstNameObj = document.getElementById("firstName");
+	   if (firstNameObj.value.length == 0) {
+		   alert("Please enter a first name.");
+		   return false;
+	   } 
+else {
+		   alert("Found the first name input box, value is " + firstNameObj.value);
+	   }
+	   
+	   lastNameObj = document.getElementById("lastName");
+	   if (lastNameObj.value.length == 0) {
+		   alert("Please enter a last name.");
+		   return false;
+	   } else {
+		   alert("Found the last name input box, value is " + lastNameObj.value);
+	   }
+	   
+	   phoneNumberObj = document.getElementById("phoneNumber");
+	   if (phoneNumberObj.value.length == 0) {
+		   alert("Please enter a phone number.");
+		   return false;
+	   } else {
+		   alert("Found the phone number input box, value is " + phoneNumberObj.value);
+	   }
+	   
+	   cityNameObj = document.getElementById("cityName");
+	   if (cityNameObj.value.length == 0) {
+		   alert("Please enter a city name.");
+		   return false;
+	   } else {
+		   alert("Found the city name input box, value is " + cityNameObj.value);
+	   }
+	   
+	   zipCodeObj = document.getElementById("zipCode");
+	   if (zipCodeObj.value == 0) {
+		   alert("Please select a zip code.");
+		   return false;
+	   } else {
+		   alert("Found the zip code input box, value is " + zipCodeObj.value);
+	   }
+	   return true;
+	}
+</script>
+     </head>
+<body style="background-color:lightyellow">
+
+<form method="post" onsubmit="return formOK()" action="Echo">
+<div>
+<table>
+       <tr><th colspan=4>Please tell us who you are (Georgia residents only)
+       <tr><td>First name<td><input type="text" size=20 id="firstName" name="firstName">
+           <td>Last name<td><input type="text" size=20 id="lastName" name="lastName">
+       <tr><td>Telephone <td><input type="text" size=15 id="phoneNumber" name="phoneNumber"> <td>&nbsp;<td>&nbsp;
+        <tr><td>City<td><input type="text" size=20 id="cityName" name="cityName">
+            <td>Zip code:<td><select id="zipCode" name="zipCode"><option value="0">--Select--</option><option value="12345">12345</option><option value="99999">99999</option></select>
+           
+        <tr><td colspan=6 style="text-align:center"><input type='submit' value="Share personal info with our unscrupulous marketing staff">
+</table>
+<input type='text' size=50 id="status">
+</div>
+</form>
+<p>
+      <a href="http://validator.w3.org/check/referer"><img
+          src="http://www.w3.org/Icons/valid-html401"
+          alt="Valid HTML 4.01!" height="31" width="88"></a>
+    </p>
+</body>

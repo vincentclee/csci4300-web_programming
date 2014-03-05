@@ -1,0 +1,277 @@
+0005,Franklin House,C - 1
+0019,Hodgson Oil Building,D - 1
+0020,Phi Kappa Hall,C - 1
+0021,Demosthenian Hall,C - 1
+0022,Chapel,C - 1
+0023,Terrell Hall,C - 1
+0024,Meigs Hall,C - 1
+0025,Moore College,C - 1
+0030,New College,C - 1
+0031,Candler Hall,C - 1
+0032,Bishop House,C - 1
+0033,Interim Medical Partnership Building,D - 2
+0040,Jackson Street Building,"C - 1, D - 1"
+0041,Waddel Hall,C - 1
+0042,Peabody Hall,C - 1
+0043,Hirsch Hall,C - 1
+0043,Law Library Annex,C - 1
+0043,Law School Addition,C - 1
+0044,Denmark Hall,C - 1
+0045,Dean Rusk Hall,C - 1
+0046,Caldwell Hall,C - 1
+0050,Baldwin Hall,D - 2
+0053,LeConte Hall,C - 2
+0054,Main Library,C - 2
+0055,Brooks Hall,C - 1
+0056,Park Hall,C - 2
+0058,Sanford Hall,C -2
+0060,Fine Arts Building,C - 2
+0061,Military Building Army ROTC,C - 2
+0062,Journalism Building,C - 2
+0064,Psychology Building,"C - 2, D - 2"
+0066,Instructional Plaza,C - 2
+0081,Zell B. Miller Learning Center,C - 2
+0082,Hull Street Deck,B - 2
+0090,Geology Hydrothermal Lab,C - 2
+0101,Chicopee Main Building No.1,"E - 0, E - 1"
+0103,Central Office Supply,E - 0
+0110,Business Services,C - 1
+0113,Office of University Architects,C - 1
+0120,Holmes/Hunter Academic Building,C - 1
+0121,Business Services Annex,C - 1
+0122,North Campus Deck,"C - 1, D - 1"
+0123,Tanner Building,C - 1
+0124,Sculpture Canopy,D - 1
+0130,Old College,C - 1
+0178,Central Campus Mech. Building,C - 2
+0250,Joseph E. Brown Hall,C - 2
+0270,Payne Hall,D - 2
+0271,Milledge Hall,D - 2
+0280,Reed Hall,"C - 2, D - 2"
+0290,Clark Howell Hall,"B - 2, C - 2"
+0620,Human Resources,C - 1
+0631,Administration Building,C - 1
+0632,Lustrat House,C - 1
+0640,Gilbert Hall,C - 1
+0650,Founders House,C - 2
+0669,Tate Parking Deck,C - 2
+0670,Memorial Hall,C - 2
+0671,University Bookstore,C - 2
+0672,Tate Student Center,C - 2
+0678,Sanford Stadium,"C - 2, C - 3"
+0740,Russell Special Collections Building,B - 2
+0741,District Energy Plant #1,B - 2
+0751,Wray-Nicholson House,B - 1
+0752,Wray-Nicholson Props 240,B - 1
+0753,Wray-Nicholson Prop 290,B - 1
+0754,Wray-Nicholson Prop 150,B - 1
+0755,Wray-Nicholson Prop 154,B - 1
+0756,Government Relations,B - 1
+0757,259 Wadell St,B - 1
+0758,159 South Newton St,"B - 1, B - 2"
+0766,Environmental Design Studios,B - 1
+0767,Interior Design Studios,B - 1
+0768,Drawing & Painting Studios,B - 1
+1000,Biological Sciences Building,"C - 3, D - 3"
+1001,Chemistry,C - 3
+1002,Geography and Geology,C - 3
+1003,Physics Building,C - 3
+1004,Chemistry Annex,C - 3
+1010,Dawson Hall,C - 3
+1010,Speirs Hall,C - 3
+1011,Conner Hall,C - 3
+1012,Lumpkin House,C - 3
+1013,Poultry Science,D - 3
+1020,Food Science Building,D - 3
+1021,Barrow Hall,C - 3
+1022,Food Processing Lab,C - 3
+1023,Boyd Graduate Research Center,C - 3
+1030,Marine Science / Dance,C - 3
+1031,Hardman Hall,C - 3
+1033,Ecology,C - 4
+1038,Pharmacy South,C - 4
+1040,Forestry Resources 1,C - 4
+1041,R. C. Wilson Pharmacy,C - 4
+1042,Hoke Smith Annex,B - 4
+1043,Coop. Ext. Serv. - Hoke Smith,B - 4
+1044,Forestry Resources 3,C - 4
+1046,Forestry Resources 4,C - 4
+1050,Environmental Health Sciences,C - 4
+1057,Davison Life Sciences Complex,D - 4
+1058,Life Sciences Fermentation Lab,D - 4
+1060,Aderhold,"C - 4, D - 4"
+1061,Miller Plant Science,C - 4
+1064,Vet. Med. Locomotive Diag. Ctr.,C - 4
+1065,Vet. Medicine 9,C - 4
+1066,Vet. Medicine 10,C - 4
+1067,Vet. Medicine 11,C - 4
+1068,Vet. Medicine 12,C - 5
+1070,College of Veterinary Medicine 1,C - 4
+1072,Vet. Medicine 2,C - 4
+1073,Vet. Medicine 6,C - 4
+1077,Animal Health Research Center,"C - 4, D - 4"
+1079,Vet Med Diagnostic Lab,C - 4
+1082,Wildlife Health,C - 5
+1084,Vet Med BioResources,C - 4
+1090,Driftmier Engineering Center,C - 5
+1094,Soil Tillage Laboratory,C - 5
+1110,Carlton Street Deck,B - 4
+1111,Paul D. Coverdell Center,"B - 4, C - 4"
+1130,Statistics & Computer Services,D - 3
+1139,South Campus Deck,B - 3
+1140,Forestry Resources 2,C - 4
+1215,Rutherford Hall,"B - 3, C - 3"
+1220,Soule Hall,C - 3
+1221,Mary Lyndon Hall,"B - 3, C - 3"
+1222,Myers Hall,B - 3
+1246,Family Science Center 1,C - 4
+1247,Housing Research Center,"B - 4, C - 4"
+1248,Consumer Research Center,B - 4
+1249,Family Science Center 2,"B - 3, C - 3"
+1250,Tucker Hall,D - 4
+1340,Horticulture Greenhouse,C - 3
+1340,Horticulture Greenhouse,C - 4
+1354,LathGreenhouse 1,C - 4
+1501,Rhodes Animal Science Center - A,"D -5,  E - 5"
+1502,Rhodes Animal Science Center - B,E - 5
+1503,Rhodes Animal Science Center - C,E - 5
+1510,East Village Deck,E - 5
+1511,Joe Frank Harris Commons,D - 5
+1512,East Campus Village / 1512,E - 5
+1513,Rooker Hall,E - 5
+1514,Vandiver Hall,E - 5
+1515,McWhorter Hall,E - 5
+1516,Building 1516,E - 5
+1617,District Energy Plant #2,"C - 3, D - 3"
+1618,Central Heating Plant 2,C - 3
+1620,Central Heating Plant 1,C - 3
+1621,Science Library,C - 3
+1632,Electronics Shop,C - 3
+1634,Vehicle Transporation & Maintenance,E - 7
+1637,Campus Transit Facility,D - 8
+1640,Georgia Center for Cont Ed,"B - 3, B - 4"
+1641,Physical Plant Utility,D - 4
+1642,Physical Plant Grounds,D - 4
+1643,Snelling Dinning Hall,C - 3
+1652,Child Development Laboratory,"B -4, C - 4"
+1654,Stegeman Coliseum,B - 4
+1656,Cobb House,B - 3
+1657,Treanor House,B - 3
+1665,Storage Shed,B - 4
+1668,Judges Tower,"A - 4, B - 4"
+1670,Tennis Hall of Fame,B - 4
+1671,Butts-Mehre Building,A - 4
+1673,Student Athlete Academic Center,B - 4
+1675,J.W. Fanning Building,B - 3
+1678,Women's Tennis Clubhouse,B - 4
+1679,Men's Tennis Clubhouse,B - 4
+1680,Vet. Medicine 5A,C - 4
+1682,Vet. Medicine 5C,C - 4
+1683,Vet. Medicine 5D,C - 4
+1685,Foley Baseball Stadium,"A - 4, B - 4"
+1686,Baseball Maintenance & Storage,B - 4
+1687,Coliseum Training Facility,B - 4
+1690,Ramsey Center,D - 5
+1691,Hugh Hodgson School of Music,"D - 4, E - 4"
+1692,Performing Arts,D - 4
+1693,Georgia Museum of Art,D - 4
+1694,Lamar Dodd School of Art,"D - 4, E - 4"
+1698,East Campus Deck,E - 5
+1699,Performing Arts Complex Deck,D - 4
+1701,UGA Health Center,D - 5
+2029,529 Baxter St,A - 2
+2118,Campus Mail/Environmental Safety,E - 6
+2119,Auxiliary Services,B - 3
+2122,Central Food Storage,E - 6
+2124,Riverbend Solvent Storage Bldg,E - 6
+2125,Riverbend Research Lab North,E - 6
+2127,Center for Applied Isotope Study,E - 6
+2130,Printing Department,D - 4
+2131,Ceramics,D - 4
+2136,West Campus Deck,A - 3
+2200,Chi Phi Fraternity,B - 1
+2204,Morris Hall,B - 2
+2205,Sigma Chi Fraternity,B - 2
+2208,Lipscomb Hall,B - 2
+2209,Mell Hall,B - 2
+2210,Bolton Dining Commons,B - 2
+2211,Creswell Hall,B - 2
+2212,Russell Hall,A - 2
+2213,Brumby Hall,A - 2
+2214,Hill Hall,B - 2
+2215,Church Hall,"B - 2, B - 3"
+2216,Boggs Hall,B - 3
+2217,Oglethorpe House,B - 3
+2218,Alpha Chi Omega Sorority,B - 3
+2219,Delta Phi Epsilon Sorority,A - 4
+2220,Sigma Delta Tau Sorority,A - 4
+2221,University Village A,C - 5
+2222,University Village B,C - 5
+2223,University Village C,C - 5
+2224,University Village D,C - 5
+2225,University Village E,C - 6
+2226,University Village F,C - 6
+2227,University Village G,C - 6
+2228,University Village H,C - 6
+2229,University Village J,C - 5
+2230,University Village K,C - 5
+2231,University Village L,C - 5
+2232,Alpha Epsilon Pi Fraternity,D - 4
+2233,Kappa Sigma Fraternity,D - 3
+2238,Family Housing Office,B - 6
+2240,Rogers Road Apts M,B -7
+2241,Rogers Road Apts N,B - 7
+2242,Rogers Road Apts P,B - 7
+2243,Rogers Road Apts Q,B - 7
+2244,Rogers Road Apts R,C - 7
+2245,Rogers Road Apts S,C - 8
+2255,Alpha Psi Vet. Fraternity,B - 4
+2256,Omega Tau Sigma Fraternity,B - 4
+2257,Oglethorpe Dining Commons,B - 3
+2260,Brandon Oaks T,B - 6
+2261,Brandon Oaks U,B - 6
+2262,Brandon Oaks V,"B - 6, B - 7"
+2291,Sigma Nu Fraternity,D - 3
+2292,Tau Epsilon Phi Fraternity,D - 3
+2293,Phi Delta Theta Fraternity,D - 3
+2294,Pi Kappa Alpha Fraternity,D - 3
+2352,Vet. Medicine  Pole Barn,D - 8
+2362,Storage Barn,D - 8
+2368,Vet. Medicine  Shop,D - 8
+2369,Vet. Medicine  Storage,D - 8
+2370,Vet. Medicine Block Building,D - 8
+2371,Vet. Medicine  Barn,D - 8
+2373,Shop Building,D - 8
+2383,Vet. Medicine Fish Barn,D - 8
+2408,Agronomy Soil Building,F - 6
+2409,Soil Building 2,F - 6
+2410,Headhouse Horticulture,F - 6
+2411,Headhouse Plants Agronomy,F - 6
+2413,Soil Storage Building,F - 6
+2414,Lath Greenhouse 3 Botony,F - 7
+2417,Rhizotron Building,F - 6
+2418,Riverbend Research Lab South,E - 6
+2419,CCRC,E - 7
+2423,Horticulture Greenhouse 1,F - 6
+2425,Entomology Greenhouse/Headhouse,F - 6
+2426,Agronomy Seed Lab,F - 6
+2437,Soil Chemical &  Equipment Bldg,F - 6
+2438,CAGTECH,F - 6
+2440,Lake Herrick Pavilion,D - 6
+2600,Thomas Street South,D - 1
+2604,Legion Pool,B - 2
+2606,Thomas Street Art Studio,D - 1
+2614,Learning Ally,B - 2
+2622,Henry Feild Tennis Stadium,B - 4
+2623,Lindsey Hopkins Indoor Tennis Stadium,B - 4
+2627,Office of Service-Learning,A - 3
+2632,Intramural Fields Restrooms,D - 6
+2634,Intramural Field Equipment Shed,D - 6
+2634,Public Service & Outreach,A - 4
+2636,UGA Real Estate Foundation,A - 4
+2680,Sculpture & Ceramics Studio,D - 1
+2685,Staff Training & Development,D - 1
+2691,Thomas Street Sculpture,D - 1
+2835,Four Towers,D - 5
+2970,Intramural Tennis Pavilion,C - 6
+2972,Intramural Fields Deck,D - 6

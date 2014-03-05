@@ -1,0 +1,7 @@
+LOAD DATA CONCURRENT LOCAL INFILE '/home/student/CoursePicker/CSVFiles/CS_Requirements_List.csv'
+REPLACE
+INTO TABLE CSRequirementsList
+FIELDS TERMINATED BY ','
+OPTIONALLY ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+(id,requirementName);

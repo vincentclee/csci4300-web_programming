@@ -1,0 +1,5 @@
+CREATE TABLE BuildingIndexByNumber (
+id INT AUTO_INCREMENT PRIMARY KEY,
+buildingNum VARCHAR(10),
+buildingName VARCHAR(100),
+grid VARCHAR(20));

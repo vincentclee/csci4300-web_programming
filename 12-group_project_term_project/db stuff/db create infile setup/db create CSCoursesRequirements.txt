@@ -1,0 +1,4 @@
+CREATE TABLE CSCoursesRequirements (
+id INT,
+CoursePrefix VARCHAR(10),
+CourseNum VARCHAR(15));

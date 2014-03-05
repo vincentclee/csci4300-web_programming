@@ -1,0 +1,40 @@
+University Requirements
+1	Cultural Diversity Requirement
+2	Environmental Literacy Requirement
+Franklin College Requirements
+10	Franklin College Foreign Language
+11	Franklin College Literature
+12	Franklin College Fine Arts/Philosophy/Religion
+13	Franlin College History
+14	Franklin CollegeSocial Sciences other than History
+15	Franklin College Biological Sciences
+16	Franklin College:Physical Sciences
+17	Franklin College Multicultural Requirement
+AREA I: Foundation Courses
+3	Core Curriculum I: Foundation Courses
+AREA II: Sciences
+4	Core Curriculum II: Physical Sciences
+5	Core Curriculum II: Life Sciences
+AREA III: Quantitative Reasoning
+6	Core Curriculum III: Quantitative Reasoning
+AREA IV: World Lang & Culture, Humanities & Arts
+7	Core Curriculum IV: World Languages and Culture
+8	Core Curriculum IV: Humanities and Arts
+AREA V: Social Sciences
+9	Core Curriculum V: Social Sciences
+AREA F/VI: Major Related Requirements
+18	Core CurriculumVI: Major related courses
+Major Requirements
+19	Computer Science Major Courses
+
+
+
+university-requirements
+franklin-college-requirements
+area-i-foundation-courses
+area-ii-sciences
+area-iii-quantitative-reasoning
+area-iv-world-lang-culture-humanities-arts
+area-v-social-sciences
+area-f-vi-major-related-requirements
+major-requirements
