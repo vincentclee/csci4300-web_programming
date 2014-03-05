@@ -50,39 +50,37 @@ Surprise! We have disabled remote access to the MySql databases, because it is a
 a. MySQL 	only allows access from “localhost,” so all our code to access this database must run on the VM itself;  
 b. The javac compile step did not require the Connector/J jar file, but the run step did;  
 c. Classpath entries are either directories, like “classes”, or Jar files, like “/opt/tomcat/lib/mysql-connector-java-5.1.22.-bin.jar.” We can’t specify a directory containing jar files;  
-d. Typing these long path names is a pain in the rear.  
+d. Typing these long path names is a pain in the rear.
 We can fix the last problem easily enough: by scripting our build process using ANT.
 31. In Eclipse, create the **db.DBHelper** class, which will access the database for us. Start out by defining the basic methods specified on the next page. Please add comments to this file to tell the authors of the file.
-
 32. You will need to import java.util.ArrayList, which we commonly use to represent lists of stuff. These lists will be displayed in a JSP page later on.
-33. Note that the identifier Band is also unknown. A Band object should contain the band name and its id, which will be needed in the JSP.
-Create and define a Band class in package db. Band should have a constructor and two getter methods. As usual, its two data members should be private, so that the data can only be accessed through the getter methods. After creating the Band class, your DBHelper class should compile.
+33. Note that the identifier **Band** is also unknown. A Band object should contain the band name and its id, which will be needed in the JSP.
+Create and define a **Band** class in package **db. Band** should have a constructor and two getter methods. As usual, its two data members should be **private**, so that the data can only be accessed through the getter methods. After creating the Band class, your DBHelper class should compile.
 34. Create a JUnit test file for the Band class. (Remember to add the Junit 4 library to your project.) It should have a single test, testConstructor. Inside this test method, create a couple of Band objects and use the getters to verify that the objects have the correct value. Hopefully this testing process is becoming more routine by now.
 35. Now it’s time to test the DBHelper class into existence. Our first step is to write the constructor, which will connect to the database. Here’s the code, which will become boilerplate for all your JDBC projects in this course: 4
 36.  In the JUnit test code, we will simply test that the DBHelper object can be created without any Exceptions. Here is the test code:
 37. Run the test code on Eclipse. It will not work, for the reasons we mentioned before. To make it work, you must now upload to your VM and run in there. You will have classpath issues again, which you will need to address by putting appropriate <classpath> elements inside your build.xml file. Recall that the compile step does not need the Connector/J jar file, but running the code does.
 38. Hooray! Now it is time to start creating PreparedStatements to do the actual work. Add the following variable declarations to the top of the file:
 39. To actually create the Prepared Statements, we need the Connection to the database. Add the following code to the constructor:. Note that adding a band requires one parameter, the band name. The other two statements do not require parameters.
-
 40. Re-run the Junit test to make sure nothing blows up in our faces.
 41. Add a void clearBands() method to the DBHelper class. This method should delete all the bands. It will be used for testing purposes.5 Here is the code: 
 In general, we use the executeUpdate method when the PreparedStatement does not return any records, as in this case.
 42. Here is the code for the listBands method. Make sure you understand it, as you will be using this pattern a lot!
 
 Now I am going to set you off on your own. Here is the plan I want you to follow:
-43. Write a Junit method testBands, which does the following:
-a. Creates an instance;
-b. Clears the table of bands;
-c. Retrieves the list of bands, and asserts that it is empty;
-d. Adds a band to the list;
-e. Retrieves the list of bands, and asserts that it has length 1, and that the name of the band is what you put in;
-f. Adds a band to the list;
-g. Retrieves the list of bands, and asserts that it has length 2, and that the names of the bands are what you put in.
+43. Write a Junit method testBands, which does the following:  
+a. Creates an instance;  
+b. Clears the table of bands;  
+c. Retrieves the list of bands, and asserts that it is empty;  
+d. Adds a band to the list;  
+e. Retrieves the list of bands, and asserts that it has length 1, and that the name of the band is what you put in;  
+f. Adds a band to the list;  
+g. Retrieves the list of bands, and asserts that it has length 2, and that the names of the bands are what you put in.  
 Do NOT test id values, as these will change as we add and delete records from the database. To implement addBand, you will need the PreparedStatement.setString method. Index numbers start with 1.
 44. When this works, follow the same process for adding an album to the database. Note that you must have bands in the database before you can add albums; these should already exist if you do not call the clearBands method again. You must extract the band id from the list of bands in order to add an album.
 45. Now we have the helper class working! Now create a JSP page to contain a list of all the bands. Use JSTL or Java scriptlets to populate the list from the bandList property of DBHelper.
-46. Add a form to the JSP page to add a band. To make this work, you will need the following new methods in DBHelper:
-a. setBandName
+46. Add a form to the JSP page to add a band. To make this work, you will need the following new methods in DBHelper:  
+a. setBandName  
 b. setCommand
 47. Add a form to search for albums by a particular band. The user should be able to select the band name from a Select element. The form needs to send the band Id, not the band name to the DBHelper.  You can figure out how to do this by looking up the <OPTION> element in HTML. Make sure the user does not need to enter band ids!
 48. Finally, add a form to add a new album to the list.
