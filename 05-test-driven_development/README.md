@@ -65,6 +65,7 @@ That’s it! Save your work and rest. If you have been working with a partner, a
 ###CSCI 4300
 **Before you start:** You should have completed the second iteration of the credit card project, which adds purchases or creates an error message,  and created a JSP page as a Web view for the **CustomerAccount** class. 
 Ready to write some Java code? Let’s go!
+
 1. Launch Eclipse, and open the CreditCard project .  Bring up your **CustomerAccount** class  in your editor.  Modify the class comment to clarify what to change, in case we forget (or don’t clearly understand):To make CustomerAccount into a JavaBean, we need to define the properties exchanged between JSP and Bean:  
 a. **Properties read by the JSP page from the Bean:**  every piece of data that the page must display. This includes all of the customer data, the credit limit and unpaid balance, and the error message. Your should already have getter methods for all of these properties:  
 b. **Properties sent by the JSP page to the Bean:** the amount of a new purchase. We already have a method named addPurchase that does this, but JavaBeans must express all inputs and outputs as getter and setter methods. This is easily accomplished by wrapping addPurchase with a setter method:  
