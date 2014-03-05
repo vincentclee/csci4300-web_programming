@@ -55,7 +55,7 @@ Of course, you might want some of your images to float to the right and others t
 30. Navigate to first OL element (you will need to open the HTML and BODY elements). Click the  tab on the left and the  tab on the right. You will see a plethora of properties. 
 
 ####Validating CSS
-31. This brings up the issue of cross-browser CSS compatibility. You may design a page that looks great in your browser of choice, but crummy in other browsers because you used non-standard CSS. The best defense against cross-browser incompatibilities in CSS is the same as in HTML: validate the page to verify that it uses standard CSS. Try validating your page at W3C validator site http://jigsaw.w3.org/css-validator. Choose the  tab and copy the contents of your <style> tag, as shown here.
+31. This brings up the issue of cross-browser CSS compatibility. You may design a page that looks great in your browser of choice, but crummy in other browsers because you used non-standard CSS. The best defense against cross-browser incompatibilities in CSS is the same as in HTML: validate the page to verify that it uses standard CSS. Try validating your page at W3C validator site http://jigsaw.w3.org/css-validator. Choose the  tab and copy the contents of your `<style>` tag, as shown here.
 
 ####Relative and absolute positioning
 Now we will show how to control where a page element appears. Normally, the browser lays out elements one after the other, in what is called normal document flow, but we can change this.
