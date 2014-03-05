@@ -12,23 +12,21 @@ In this exercise we will create some MySqL database tables to maintain the custo
 * Next, write your specs, JUnit test code, and initial stub implementation code on Eclipse (adapting your existing CreditCard project);
 * Then, upload code to the VM and test using ANT.
 
-Continue these steps as you test your code into existence, or edit your code directly on the server using a Unix editor such as emacs or vi.
+Continue these steps as you test your code into existence, or edit your code directly on the server using a Unix editor such as **emacs** or **vi**.
+
 1. Create the Customer table first. MySQL provides the decimal data type, which allows us to specify the total number of digits and the number of digits after the decimal point.
 2. In MySQL 5.1, we must specify the InnoDB database engine in order to use foreign key constraints, as we will show in the next step.
 3. Now create the Purchase table, which is linked to the Customer table via a foreign key. This implements the many-to-one relationship between customers and purchases (one customer has many purchases, but each purchase belongs to only one customer). Be careful with the commas and parens; on the command line client, you can use the up arrow to edit the previous command.
-
 4. Enter these commands to test the foreign key constraint:
 5. Now enter the same Purchase with custID=1, which should succeed. Next, attempt to delete Gordon Gecko’s account:
-6. Launch Eclipse and open the CreditCard application. Check the libraries and make sure you have the server runtime library installed in the application. If not, use Build Path/Add Libraries to add the Tomcat runtime library.
-7. There will be two JSP pages in this iteration of the application:
-a. customerList.jsp, holding a list of the customer data for all accounts;
-b. customer.jsp holding the customer data for a single account plus a list of the transactions for that account.
-8. Let’s start by writing the JSP pages.  First, download the starter mockup of customerList.jsp from eLC. Create a  new JSP file with this name and open it in Eclipse. Copy the downloaded code into customerList.jsp. Run the application, and navigate to customerList.jsp to view the generated code.
-
-
+6. Launch Eclipse and open the CreditCard application. Check the libraries and make sure you have the server runtime library installed in the application. If not, use **Build Path/Add Libraries** to add the Tomcat runtime library.
+7. There will be two JSP pages in this iteration of the application:  
+a. **customerList.jsp**, holding a list of the customer data for all accounts;  
+b. **customer.jsp** holding the customer data for a single account plus a list of the transactions for that account.
+8. Let’s start by writing the JSP pages.  First, download the starter mockup of **customerList.jsp** from eLC. Create a  new JSP file with this name and open it in Eclipse. Copy the downloaded code into customerList.jsp. Run the application, and navigate to customerList.jsp to view the generated code.
 9.  Note that the page will contain multiple table rows, meaning it must use a JSTL forEach loop.
-
 10. Next, let’s start mapping out the Controller workflow. This example will not use authentication, so we won’t worry about session data:
+
 Method
 Request params
 Result
