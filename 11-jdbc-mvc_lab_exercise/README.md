@@ -27,23 +27,22 @@ b. **customer.jsp** holding the customer data for a single account plus a list o
 9.  Note that the page will contain multiple table rows, meaning it must use a JSTL forEach loop.
 10. Next, let’s start mapping out the Controller workflow. This example will not use authentication, so we won’t worry about session data:
 
-Method
-Request params
-Result
-GET
-None
-Customer list
-GET
-custID
-Single customer
+Method | Request params | Result
+------ | -------------- | ------
+GET | None | Customer list
+GET | custID | Single customer
 
 You can continue adding to this table as you implement additional functionality. (It’s not a sin to edit my class notes!)
+
 11.  For the MVC iteration of this project, the functionality in your existing CustomerAccount class will be broken into various classes:
-The existing class Customer  becomes a data transfer object class. It contains the data that will be displayed on the JSP pages, and is part of the Model component of the MVC architecture.
-A new class Purchase will be a data transfer object representing purchases.  The Customer class will be refactored to include a list of Purchase objects.
-A new class, CustomerDAO is the data access object class. This manages the database tables and is a helper class for the Controller.
-A new class, CustomerController, will be the MVC Controller
+
+* The existing class **Customer**  becomes a **data transfer object** class. It contains the data that will be displayed on the JSP pages, and is part of the Model component of the MVC architecture.
+* A new class **Purchas**e will be a data transfer object representing purchases.  The Customer class will be refactored to include a list of Purchase objects.
+* A new class, **CustomerDAO** is the **data access object** class. This manages the database tables and is a helper class for the Controller.
+* A new class, CustomerController, will be the MVC Controller
+
 The next few steps in the development process do not use the database, so you can carry them out on Eclipse.
+
 13.  Create the new class Purchase. As this is an “entity class,” which will simply carry the contents of a database record, it only needs a constructor and getter methods. 
 14. Create a JUnit test case PurchaseTest. You only need a single testConstructor method and two or three test cases.
 15. Test Purchase into existence. This part should be easy!
@@ -52,11 +51,11 @@ The next few steps in the development process do not use the database, so you ca
 18. Create a new Java class CreditDAO in package creditcard. Download the starter Java and JUnit code from eLC.  Implement only the addCustomer and  getCustomerList method for starters.
 19. At this point, please move to the VM for the JUnit tests. You will quickly discover that each time we run the unit test, it adds two new records to the table, which causes the test to fail. Instead of adding Java code or removing the records by hand, see if you can use the ANT sql task to delete the records.
 20. Now create the controller class CreditController. Remember to use New/Servlet to create this class. From the table above, we just need the doGet method to start with. This method should:
-Create a new helper object of class CreditDAO;
-Get the list of Customers from the helper;
-Attach the list of CustomerAccounts to the request as an attribute;
-Forward the request to customerList.jsp.
+* Create a new helper object of class CreditDAO;
+* Get the list of Customers from the helper;
+* Attach the list of CustomerAccounts to the request as an attribute;
+* Forward the request to customerList.jsp.
 21. You see where this is going, right? Now we need to edit customerList.jsp to add a forEach loop that will spit out the customer accounts. Remember that we are just giving account details here, not the list of transactions.
 22. See if you can get this to work. Remember that you may need to insert some customer account records by hand.
 23. Set up the form in customerList,jsp to add a new customer. This will be handled by the doPost method in CreditController. As before, this action should return to the customerList.jsp page.
-24. Next, write the customer.jsp page following the general pattern above. It should contain a list or table containing the Purchase objects, and an input form for entering a new Purchase. Remember that all requests will go through CreditController, which is mapped to the URL /Customer. Be sure to fill out the controller workflow table above; you’ll see that there is a GET  and a POST request involved.
+24. Next, write the **customer.jsp** page following the general pattern above. It should contain a list or table containing the Purchase objects, and an input form for entering a new Purchase. Remember that all requests will go through CreditController, which is mapped to the URL /Customer. Be sure to fill out the controller workflow table above; you’ll see that there is a GET  and a POST request involved.
