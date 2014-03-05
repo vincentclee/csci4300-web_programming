@@ -6,6 +6,7 @@ Introduction: So far, we have built our MVC applications “by hand,” so to sp
 In industry practice it is more common to use an MVC framework, which auto-generates some of the code and protects us against this sort of vulnerability. Java Server Faces and Spring MVC are two of the most popular frameworks. In my experience, JSF has the less steep learning curve.
 
 This document is just an intro to an online JSF tutorial. Before starting the online tutorial, we need to do a bit of configuration.
+
 1. Download the javax.faces.jar file from eLC. This replaces the jsf-impl and jsf-api files mentioned in the tutorial.
 2. In Eclipse, create a new Dynamic Web project named JSF Examples. In the Wizard panel where you name the project, select a Java Server Pages 2.1 configuration.
 3. Continuing in the New Project Wizard, click the checkbox to create a stub web.xml on the fourth pane.
