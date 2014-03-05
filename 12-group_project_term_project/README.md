@@ -26,46 +26,46 @@ The second iteration is a challenge exercise! Your team can get full credit by c
 Requirement_id,prefix,courseNo
 
 --where Requirement_id is the id in the table of requirements attached to this course. This format is suitable for uploading into a MySQL database table using the LOAD DATA INFILE command. In this way, each team can build its own database table containing all the courses that might be used to satisfy a given requirement. We are deliberately ignoring complexities such as courses that can only be used under certain circumstances, requirements that need more than one course to satisfy them, etc.
+
 Hint: Excel spreadsheets can be saved as CSV files. This is the easiest way to do it. Here are the first few lines of the course list for requirement 1, the Franklin College Cultural Diversity requirement. Note how we have handled the cross-listed course AFAM/PSYC 3150.
-Milestones and project deadlines
-I will ask for preliminary submissions along the way, and will make a maximum attempt to respond with helpful comments within two days’ time. Except for the final submission deadline, your team will be able to resubmit a component within two days of receiving my comments.
-Milestone
-Submission Deadline
-Requirement-course CSV file
-Mar 25
-User interface mockup (HTML files, no JavaScript)
-Mar 25
-Data model
-Mar 25
-Java and JavaScript specs
-Apr 1
-Final code submission
-Apr 26
-Student demos
-Apr 29
+
+####Milestones and project deadlines
+* I will ask for preliminary submissions along the way, and will make a maximum attempt to respond with helpful comments within two days’ time. Except for the final submission deadline, your team will be able to resubmit a component within two days of receiving my comments.
+
+Milestone | Submission Deadline
+--------- | -------------------
+Requirement-course CSV file | Mar 25
+User interface mockup (HTML files, no JavaScript) | Mar 25
+Data model | Mar 25
+Java and JavaScript specs | Apr 1
+Final code submission | Apr 26
+Student demos | Apr 29
+
 Please don’t ask to continue working on this project past Apr 29, the last day of classes. You need to be studying for final exams, and I need to be grading your work!
-Grading Rubric (Team Grade)
 
-Capability
-Points
-Daily refresh of courses
-10
-Pick courses satisfying a requirement
-10
-User-friendly display of course list
-10
-JavaScript graphical display
-10
-Handling time conflicts
-10
+####Grading Rubric (Team Grade)
+
+Capability | Points
+---------- | ------
+Daily refresh of courses | 10
+Pick courses satisfying a requirement | 10
+User-friendly display of course list | 10
+JavaScript graphical display | 10
+Handling time conflicts | 10
+
 As you might expect, all code will be subject to grading deductions for failure to follow the course coding guidelines (spec comments, loop comments, informative variable names, etc.)
-Grading Rubric (individual work)
-This will be based on the fraction of the work done by each individual. My rough metric will be lines of code, but I am willing to subjectively tweak this measure up if your contribution was particularly challenging. If you contributed at least 20% of the total work, you will get full credit.
-If possible, each student should create some JUnit test code, some Java implementation code, and a JavaScript function. The test code and implementation code for a class should be written by different people.
-Academic Honesty Guidelines:
-Since this is group assignment, you are allowed to help others on your team with code. However, please don’t write code under another student’s name.
-Final Exam question related to this assignment:
-On the final exam, you will be asked the following question:
-“Discuss a design decision that your team made during the CoursePicker project. Explain the tradeoffs involved in this decision and why your team made the decision it did.”
-This question will be an entire section of the final exam, accounting for about 10% to 20% of the exam grade. As you can see, it is a team question, and you are encouraged to discuss it with the rest of your team. I won’t consider it cheating if I get similar answers from all of the team members!
 
+####Grading Rubric (individual work)
+This will be based on the fraction of the work done by each individual. My rough metric will be lines of code, but I am willing to subjectively tweak this measure up if your contribution was particularly challenging. If you contributed at least 20% of the total work, you will get full credit.
+
+If possible, each student should create some JUnit test code, some Java implementation code, and a JavaScript function. The test code and implementation code for a class should be written by different people.
+
+####Academic Honesty Guidelines:
+Since this is group assignment, you are allowed to help others on your team with code. However, please don’t write code under another student’s name.
+
+####Final Exam question related to this assignment:
+On the final exam, you will be asked the following question:
+
+“Discuss a design decision that your team made during the CoursePicker project. Explain the tradeoffs involved in this decision and why your team made the decision it did.”
+
+This question will be an entire section of the final exam, accounting for about 10% to 20% of the exam grade. As you can see, it is a team question, and you are encouraged to discuss it with the rest of your team. I won’t consider it cheating if I get similar answers from all of the team members!
