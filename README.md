@@ -1,7 +1,7 @@
 ##CSCI 4300 Web Programming
 
 ###Spring 4300
-**Instructor:** Dr. Dan Everett, drdan@uga.edu  
+**Instructor:** [Dr. Dan Everett](http://cobweb.cs.uga.edu/~dme/), drdan@uga.edu  
 **Office Hours:** M 3:15 – 4:00, TR 1:00 – 2:00 in Boyd 418; other times by appointment  
 **Teaching Assistant:** TBA  
 **Text and online readings:** Java Servlets and JSP by Murach, 2nd ed. Additional online readings and videos will be provided on eLC. The textbook readings are listed in the class schedule below.  
