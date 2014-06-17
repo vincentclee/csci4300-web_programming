@@ -1,4 +1,4 @@
-##CoursePicker Team Project
+##[CoursePicker Team Project](http://vincentclee.github.io/uga-course-picker/)
 
 ###CSCI 4300
 Introduction: The UGA Registrar’s Office publishes a series of “static reports” on the status of all classes offered at UGA. These reports are published daily in computer-readable form, and provide a “snapshot” of all courses available for registration. You can see a list of relevant static reports at  
